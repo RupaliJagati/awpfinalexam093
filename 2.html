@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .flexlayout{
+            display: flex;
+            justify-content: center;
+            height: 50vh;
+           
+        
+        }
+        .mybody{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+             
+          align-items: center;
+            background:chocolate;
+            margin-top: 20px;
+             border-radius: 5%,5%,5%,5%;
+        }
+       #field{
+           height: 5vh;
+           width: 30vw;
+           font-size: 1.2rem;
+           
+       }
+       .output1{
+           display: flex;
+           justify-content: space-between;
+       }
+        
+    </style>
+    <script src="2.js"></script>
+
+</head>
+<body>
+    <div class="flexlayout">
+            <section class="mybody" >
+                
+                <h1 style="padding-top: 20px;">Enter user name</h1>
+            <div> <input  id="field" type="text" class="username" placeholder="enter username required"></div>
+                <br>
+            <h1>Enter password</h1>
+            <div> <input id="field" type="password" class="password" placeholder="enter password" required></div>
+            <br>
+            
+            <br>
+            <div class="submit">
+               
+            <button class="btn btn-danger btn-lg" onclick="submit()">submit</button>
+            </div>
+           
+            <br>
+            <br>
+            <br>
+            <div class="output">
+                    <div><h3>Username is:</h3></div>
+                    <div class="username1"><input  id="field" type="text" ></div>
+                   
+             </div>      
+             <div class="output"> 
+                    <div><h3>password is</h3></div>
+                    <div class="password1"><input  id="field" type="text"></div>
+             </div>
+           
+            </section>
+    </div>
+</body>
+</html>
